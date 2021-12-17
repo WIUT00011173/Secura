@@ -26,7 +26,8 @@
 }
 
 .section-1 {
-  padding: 40px 375px 0 375px;
+  padding: 40px 375px 0 275px;
+  position: relative;
 }
 
 @media (max-width: 1440px) {
@@ -84,9 +85,128 @@
   color: #ffffff;
 }
 
+.section-1 .backgorund {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 700px;
+  background-color: #F9F8F9;
+  z-index: -1;
+}
+
 .section-1 main {
   height: calc(100vh - 62px - 40px);
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-1 main > div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.section-1 main > div:nth-child(1) h1 {
+  font-family: "Poppins SemiBold";
+  font-size: 70px;
+}
+
+.section-1 main > div:nth-child(1) .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.section-1 main > div:nth-child(1) .btn {
+  font-family: "Poppins Regular";
+  padding: 15px 32px;
+  border: 1px solid #FF7132;
+  color: #FF7132;
+  border-radius: 30px;
+}
+
+.section-1 main > div:nth-child(1) .btn:hover {
+  background-color: #FF7132;
+  color: #ffffff;
+}
+
+.section-1 main .img {
+  margin-left: 100px;
+}
+
+.section-1 main .img .img-container {
+  border: 30px solid #ffffff;
+  position: relative;
+  height: 450px;
+  width: 450px;
+  background-color: #FF7132;
+  border-radius: 50%;
+}
+
+.section-1 main .img .img-container > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-1 main .img .img-container > img:nth-child(2) {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.section-1 main .img .img-container .battery {
+  position: absolute;
+  bottom: 0;
+  right: -90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.section-1 main .img .img-container .battery .info {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 body {

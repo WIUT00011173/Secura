@@ -8,6 +8,15 @@
 @import "./utils/variables";
 @import "./sections/section-1";
 
+
+// for all:
+a{
+    text-decoration: none;
+}
+.btn{
+    transition: .3s;
+}
+
 body {
     font-family: "Poppins Regular";
     font-style: normal;

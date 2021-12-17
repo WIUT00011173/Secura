@@ -7,3 +7,15 @@ $fw-400: "Poppins Regular";
 $fw-500: "Poppins Medium";
 $fw-600: "Poppins SemiBold";
 $fw-700: "Poppins Bold";
+
+@mixin btn {
+    font-family: $fw-400;
+    padding: 15px 32px;
+    border: 1px solid $orange;
+    color: $orange;
+    border-radius: 30px;
+    &:hover {
+        background-color: $orange;
+        color: #ffffff;
+    }
+};
