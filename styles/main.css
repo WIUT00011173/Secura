@@ -609,6 +609,95 @@ main .img .img-container .battery .info {
   border-radius: 15px;
 }
 
+.section-5 {
+  padding-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-5 > .video_instr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(/assets/icons/repair.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 494px;
+  height: 485px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-5 > .video_instr > img {
+  padding: 31px 60px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+.section-5 .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.section-5 .txt > p:nth-child(1) {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  color: #444444;
+}
+
+.section-5 .txt > p:nth-child(2) {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+  font-size: 20px;
+}
+
+.section-5 .txt > p:nth-child(3) {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+  width: 400px;
+}
+
+.section-5 .txt > a {
+  font-family: "Poppins Regular";
+  padding: 15px 32px;
+  border: 1px solid #FF7132;
+  color: #FF7132;
+  border-radius: 30px;
+}
+
+.section-5 .txt > a:hover {
+  background-color: #FF7132;
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }

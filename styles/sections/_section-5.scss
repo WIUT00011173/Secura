@@ -1,0 +1,46 @@
+.section-5{
+    padding-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .video_instr{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(/assets/icons/repair.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 494px;
+        height: 485px;
+        background-size: cover;
+        background-position: center;
+
+        > img{
+            padding: 31px 60px;
+            background-color: red;
+            border-radius: 15px;
+        }
+    }
+    .txt{
+
+    
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        > p:nth-child(1){
+            @include boldTxt(40px);
+        }
+        > p:nth-child(2){
+            @include texts;
+            font-size: 20px;
+        }
+        > p:nth-child(3){
+            @include texts;
+            width: 400px;
+        }
+        > a{
+            @include btn;
+        }
+    }
+}
