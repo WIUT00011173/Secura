@@ -1,0 +1,60 @@
+.section-4{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h1{
+
+        @include boldTxt;
+        text-align: center
+    }
+    > p{
+        @include texts;
+        text-align: center;
+    }
+
+    .instructions{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        .txt{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            > p:nth-child(1){
+                @include boldTxt(40px);
+            }
+            > p:nth-child(2){
+                @include texts;
+                font-size: 20px;
+            }
+            > p:nth-child(3){
+                @include texts;
+                width: 400px;
+            }
+
+            > a{
+                @include btn;
+            }
+        }
+        .video_instr{
+            background: url(/assets/icons/videoBg.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            width: 794px;
+            height: 485px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > img{
+                padding: 31px 60px;
+                background-color: red;
+                border-radius: 15px;
+            }
+        }
+    }
+}
