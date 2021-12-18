@@ -698,6 +698,148 @@ main .img .img-container .battery .info {
   color: #ffffff;
 }
 
+.section-6 {
+  padding-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.section-6 .customer-img {
+  width: 450px;
+  height: 450px;
+  background-color: #F9F8F9;
+  position: relative;
+}
+
+.section-6 .customer-img > img {
+  position: absolute;
+  bottom: 0px;
+  left: -50px;
+}
+
+.section-6 .info > h1 {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 140%;
+  color: #444444;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-6 .customer-info {
+  position: absolute;
+  padding: 30px 80px;
+  border-left: 5px solid #FF7132;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  bottom: -20px;
+  right: 300px;
+}
+
+.section-6 .customer-info > h1 {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  color: #444444;
+}
+
+.section-6 .customer-info > p {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+}
+
+.section-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-7 .questions {
+  width: 500px;
+}
+
+.section-7 .questions img {
+  border-radius: 50%;
+  padding: 2px 4px;
+  border: 1px solid #202020;
+}
+
+.section-7 .questions > h1 {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 140%;
+  color: #444444;
+}
+
+.section-7 .questions > p {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  border-bottom: 1px solid #202020;
+  margin-bottom: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.section-7 .questions > .expandedAns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-7 .questions > .expandedAns > p {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-7 .questions > .expandedAns > p > img {
+  border: 1.5px solid #FF7132;
+  padding: 4px 4px;
+}
+
 a {
   text-decoration: none;
 }
