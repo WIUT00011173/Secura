@@ -760,12 +760,27 @@ main .img .img-container .battery .info {
 }
 
 .section-7 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-7 .background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #F9F8F9;
+  width: 400px;
+  height: 800px;
 }
 
 .section-7 .questions {
@@ -787,7 +802,7 @@ main .img .img-container .battery .info {
   color: #444444;
 }
 
-.section-7 .questions > p {
+.section-7 .questions p {
   font-family: "Poppins Regular";
   font-style: normal;
   font-weight: normal;
@@ -806,6 +821,7 @@ main .img .img-container .battery .info {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 10px;
+  width: 450px;
 }
 
 .section-7 .questions > .expandedAns {
@@ -838,6 +854,118 @@ main .img .img-container .battery .info {
 .section-7 .questions > .expandedAns > p > img {
   border: 1.5px solid #FF7132;
   padding: 4px 4px;
+}
+
+.section-7 .img .img-container {
+  position: relative;
+  background-color: #FF7132;
+  border-radius: 50%;
+  height: 480px;
+  width: 480px;
+  border: 20px solid white;
+}
+
+.section-7 .img .img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 275px 40px 275px;
+  background-color: #F9F8F9;
+}
+
+footer .secura {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+footer .secura > img {
+  width: 80px;
+}
+
+footer .secura p {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+}
+
+footer .secura .inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+footer .secura .inp input {
+  border-radius: 20px;
+  background-color: #FF7132;
+  opacity: .3;
+  border: none;
+  padding: 10px;
+}
+
+footer .secura .inp button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #FF7132;
+}
+
+footer .secura .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 150px;
+}
+
+footer .links .quick-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+footer .links .quick-links p {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
 }
 
 a {

@@ -1,0 +1,56 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 275px 40px 275px;
+    background-color: #F9F8F9;
+
+    .secura{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        > img{
+            width: 80px;
+        }
+        p{
+            @include texts;
+        }
+        .inp{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            input{
+                border-radius: 20px;
+                background-color: #FF7132;
+                opacity: .3;
+                border: none;
+                padding: 10px;
+            }
+            button{
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                background-color: #FF7132;
+            }
+        }
+        .social-icons{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    .links{
+        display: flex;
+        gap: 150px;
+
+        .quick-links{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p{
+                @include texts;
+            }
+        }
+    }
+}
