@@ -8,6 +8,8 @@ $fw-500: "Poppins Medium";
 $fw-600: "Poppins SemiBold";
 $fw-700: "Poppins Bold";
 
+
+// for buttons:
 @mixin btn {
     font-family: $fw-400;
     padding: 15px 32px;
@@ -18,4 +20,24 @@ $fw-700: "Poppins Bold";
         background-color: $orange;
         color: #ffffff;
     }
+};
+
+// for small txts:
+@mixin texts {
+    font-family: $fw-400;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #666666;
+};
+
+
+// for bold txts:
+@mixin boldTxt ($fsize: 54px) {
+    font-family: $fw-500;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fsize;
+    line-height: 140%;
+    color: #444444;
 };

@@ -1,0 +1,54 @@
+.section-2{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    h1{
+        @include boldTxt;
+        text-align: center;
+    }
+
+    .infos-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        
+        > div{
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+            border: 1px solid rgb(161, 150, 150);
+            border-radius: 15px;
+            box-shadow:  5px 10px 10px rgba($color: #000000, $alpha: .1);
+
+            > img{
+                padding: 15px;
+                background: rgba($color: #76de84, $alpha: .5);
+                border-radius: 15px;
+                
+            }
+
+            > p:nth-child(2){
+                font-family: $fw-400;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 42px;
+                letter-spacing: -0.656526px;
+                color: #666666;
+            }
+            > p:nth-child(3){
+                @include texts;
+            }
+            > p:nth-child(4){
+                @include texts;
+                color: #000;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}

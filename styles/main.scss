@@ -7,6 +7,8 @@
 @import "./utils/fonts";
 @import "./utils/variables";
 @import "./sections/section-1";
+@import "./sections/section-2";
+@import "./sections/section-3";
 
 
 // for all:
@@ -15,6 +17,16 @@ a{
 }
 .btn{
     transition: .3s;
+}
+
+section {
+    padding: 40px 275px 0 275px;
+    position: relative;
+    margin-bottom: 100px;
+    
+    @media (max-width: 1440px) {
+        padding: 40px 200px 0 200px;
+    }
 }
 
 body {
